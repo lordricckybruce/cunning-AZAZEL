@@ -1,0 +1,7 @@
+# python_controller/requirements.txt
+
+# No extra packages yet, standard lib is sufficient
+# python_controller/requirements.txt
+pycryptodome
+scapy
+flask  # if GUI is desired later

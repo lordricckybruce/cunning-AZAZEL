@@ -1,0 +1,11 @@
+[package]
+name = "payloads"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rdev = "0.5.3"
+hostname = "0.4.1"
+whoami = "1.6.0"
+chrono = "0.4"
+
